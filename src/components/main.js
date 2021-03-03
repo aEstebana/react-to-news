@@ -1,3 +1,5 @@
+/* eslint-disable no-shadow */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchCustomNews } from '../actions/fetchCustomNews';
@@ -11,6 +13,7 @@ const Main = () => {
 
   const dispatch = useDispatch();
 
+  // eslint-disable-next-line no-shadow
   const getCustomNews = (source, relevance) =>
     dispatch(fetchCustomNews(source, relevance));
 

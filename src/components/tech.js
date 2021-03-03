@@ -18,7 +18,7 @@ const Tech = () => {
         <div className="news">
           {techSelector.techNews.map((x) => (
             <div className="post" key={x.title}>
-              <img src={x.urlToImage} />
+              <img src={x.urlToImage} alt="news" />
               <h2>{x.title}</h2>
               <p>{x.description}</p>
             </div>

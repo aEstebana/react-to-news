@@ -5,6 +5,7 @@ const fetchTech = (
   action
 ) => {
   if (action.type === 'FETCH_TECH') {
+    // eslint-disable-next-line no-param-reassign
     state = { ...state, techNews: action.payload };
   }
 

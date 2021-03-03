@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { Link, Route } from 'react-router-dom';
-import image from './836[Converted].svg';
+import image from './artworks.jpg';
 
 import Store from './store/store';
 
@@ -28,7 +28,7 @@ function App() {
         </nav>
         <header>
           <h1>React Reduc Hooks</h1>
-          <img src={image} />
+          <img src={image} alt="news" />
         </header>
         <main>
           <Routes />
