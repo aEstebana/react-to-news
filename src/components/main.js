@@ -52,4 +52,33 @@ const Main = () => {
   } else {
     news = <p>slect a source and relevance from the</p>;
   }
+  return (
+    <>
+      <section>
+        <h2>custom search</h2>
+        <form onSubmit={getNews}>
+          <div className="form-control">
+            <label>Source</label>
+            <select onChange={(e) => setSource(e.target.value)}>
+              <option value="nothing">Select an option </option>
+              {sources.map((source) => (
+                <option key={source.id} value={source.id}>
+                  {source.name}
+                </option>
+              ))}
+            </select>
+            <label>Relevance</label>
+            <select onChange={(e) => setRelevance(e.target.value)}>
+              <option value="latest">Latest</option>
+              <option value="top">Top</option>
+            </select>
+            <input type="submit" value="Search" />
+          </div>
+        </form>
+        {news}
+      </section>
+    </>
+  );
 };
+
+export default Main;
