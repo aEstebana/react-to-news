@@ -18,10 +18,15 @@ const Main = () => {
     dispatch(fetchCustomNews(source, relevance));
 
   const getSources = () => {
-    fetch('https://newapi.org/v1/sources?').then((res) => {
-      console.log(customNewsSelector.customNews);
-      return res.json();
-    });
+    fetch('https://newsapi.org/v1/sources?')
+      .then((res) => {
+        console.log(customNewsSelector.customNews);
+        return res.json();
+      })
+      .then((response) => {
+        console.log(response);
+        setSources(response.sources);
+      });
   };
 
   useEffect(() => {

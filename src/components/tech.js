@@ -9,6 +9,7 @@ const Tech = () => {
 
   useEffect(() => {
     getTechNews();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
