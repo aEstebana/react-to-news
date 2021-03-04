@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import image from './artworks.jpg';
 
 import Store from './store/store';
