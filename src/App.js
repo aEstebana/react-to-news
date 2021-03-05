@@ -6,8 +6,6 @@ import Store from './store/store';
 
 import Routes from './routes';
 
-illustration - globe - logo.jpg;
-
 function App() {
   return (
     <Provider store={Store}>
@@ -28,7 +26,7 @@ function App() {
           </ul>
         </nav>
         <header>
-          <h1>React Reduc Hooks</h1>
+          <h1>React Redux Hooks</h1>
           <img src={image} alt="news" />
         </header>
         <main>
