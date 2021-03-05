@@ -31,7 +31,8 @@ const Main = () => {
 
   useEffect(() => {
     getSources();
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const getNews = (e) => {
     console.log(source);

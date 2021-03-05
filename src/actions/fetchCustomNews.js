@@ -6,7 +6,7 @@ export function fetchCustomNews(source, relevance) {
     )
       .then((res) => res.json())
       .then((res) => {
-        dispatch({ type: 'FETCH_CUSTOM_NEWS', payload: res.articales });
+        dispatch({ type: 'FETCH_CUSTOM_NEWS', payload: res.articles });
       })
       .catch((err) => {
         console.log(err);
