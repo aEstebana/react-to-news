@@ -1,11 +1,12 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { Link } from 'react-router-dom';
-import image from './artworks.jpg';
-
+import image from './illustration-globe-logo.jpg';
 import Store from './store/store';
 
 import Routes from './routes';
+
+illustration - globe - logo.jpg;
 
 function App() {
   return (
