@@ -51,6 +51,7 @@ header img {
   right: 0px;
   top: -40px;
   z-index: -1;
+  background-size: auto
 }
 
 main {

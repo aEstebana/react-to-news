@@ -59,7 +59,7 @@ const Main = () => {
       </div>
     );
   } else {
-    news = <p>slect a source and relevance from the</p>;
+    news = <p>select a source and relevance from the</p>;
   }
   return (
     <>
